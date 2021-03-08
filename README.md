@@ -2,7 +2,7 @@
 
 1. [Introducción ](#schema1)
 2. [Instalacción](#schema2)
-
+3. [Variables](#schema3)
 <hr>
 
 <a name="schema1"></a>
@@ -66,6 +66,75 @@ Para salir del modo Scala REPL
    ~~~
    bin/zeppelin-daemon.sh stop
    ~~~
+
+<hr>
+
+<a name="schema3"></a>
+
+# 3. Variables
+**val nombre_variable : tipo_datos = valor**
+
+~~~scala
+val hola : String = "Hola"
+~~~
+![scala](./image/008.png)
+**Concatenar**
+
+~~~scala
+val saludos : String = hola + " hello"
+~~~
+**Tipos de datos**
+![scala](./image/005.png)
+~~~scala
+val edad : Int = 35
+~~~
+![scala](./image/006.png)
+~~~scala
+val casado: Boolean = true
+~~~
+![scala](./image/007.png)
+
+
+En el caso del tipo de datos `Float` por defecto ponene `Double` que es el hermano mayor de los floats
+Si los queremos `Float` al valor hay que añadirle una `f`
+~~~scala
+val altura : Float = 1.75
+~~~
+
+![scala](./image/011.png)
+**Comentarios**
+
+Para poner comentarios en `Scala` se usan las barras `//`
+~~~scala
+// otros tipos de variables : Float, Long, Char, Byte
+~~~
+
+**val nombre_variable : tipo_datos = expresión**
+
+~~~scala
+val esMayorQue : Boolean = 1 > 2
+~~~
+![scala](./image/009.png)
+
+~~~scala
+val esMayorQue : Boolean = 1 < 2
+~~~
+
+![scala](./image/010.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
