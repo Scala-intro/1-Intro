@@ -44,6 +44,30 @@ Para salir del modo Scala REPL
 ~~~
 3º Insalar Spark
 
+4º Instalar Apache Zeppelin
+
+  - Ir a http://zeppelin.apache.org/download.html y descargar la versio que ponga `all`
+  - Descomprimir el archivo.
+  -  Naverga en la terminal hasta donde se descomprimió el archivo.
+  - y ejecutar  para comprobar que está funcionando
+   ~~~
+   bin/zeppelin-daemon.sh start
+   ~~~
+  
+
+   ![zeppelin](./image/002.png)
+  - Comprobamos que el servidor web esta funcionando vamos a `localhost:8080` puerto por defecto.
+  ![zeppelin](./image/003.png)
+  - Crear nuevo nota, ir a `Create new note` y ponerle el nombre que quieras. Y se nos abre un notebook nuevo
+   ![zeppelin](./image/004.png)
+
+
+   - Para parar el servidor web
+   ~~~
+   bin/zeppelin-daemon.sh stop
+   ~~~
+
+
 
 
 
