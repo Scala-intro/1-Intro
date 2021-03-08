@@ -123,21 +123,72 @@ val esMayorQue : Boolean = 1 < 2
 ![scala](./image/010.png)
 
 
+**Inferencia de tipos**
+~~~scala
+val esMenorQue = 1 < 2
+~~~
+Infiere el tipo de datos por la expresión
+![scala](./image/012.png)
+
+**Boolean operador &&**
+
+~~~scala
+var casado = true
+var tieneHijos = true
+var casadoYConHijos = casado && tieneHijos
+~~~
+
+![scala](./image/013.png)
 
 
+~~~scala
+var casado = false
+var tieneHijos = true
+var casadoYConHijos = casado && tieneHijos
+~~~
+![scala](./image/014.png)
 
 
+El operador `&&` es un `and` se tiene que cumplir dos lados con `true` para que se true la variable `casadoYConHijos`
+
+**Auto-Casting**
+~~~scala
+var resultado: Int = 20*10
+println(s"El resultado es: ${resultado}")
+~~~
+![scala](./image/015.png)
+
+~~~scala
+val nombre : String = "Patricia"
+val apellidos : String = "Carrasco"
+println(s"Mi nombre es: ${nombre} ${apellidos}")
+~~~
+
+![scala](./image/015.png)
+
+**val o var**
+
+En scala hay dos zonas claramente diferenciadas.
+ - Zona mutable
+ ~~~scala
+    var nombre : String = "Paco"
+    println(nombre)
+    nombre = "Luis"
+    println(nombre)
+~~~
+![scala](./image/017.png)
+ - Zona inmutable
+~~~scala
+val nombre : String = "Paco"
+    println(nombre)
+    nombre = "Luis"
+    error
+~~~
+![scala](./image/018.png)
 
 
-
-
-
-
-
-
-
-
-
+`val` es una constante
+`var` permite variar el valor pero su procesamiento es más lento.
 
 
 Enlaces 
