@@ -133,7 +133,7 @@ val esMenorQue = 1 < 2
 Infiere el tipo de datos por la expresión
 ![scala](./image/012.png)
 
-## Boolean operador &&
+## Boolean operador && y ||
 
 ~~~scala
 var casado = true
@@ -153,6 +153,7 @@ var casadoYConHijos = casado && tieneHijos
 
 
 El operador `&&` es un `and` se tiene que cumplir dos lados con `true` para que se true la variable `casadoYConHijos`
+El operador `||` es un `or`.
 
 ## Auto-Casting
 ~~~scala
