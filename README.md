@@ -72,18 +72,20 @@ Para salir del modo Scala REPL
 <a name="schema3"></a>
 
 # 3. Variables
+## Declarar Variables
+
 **val nombre_variable : tipo_datos = valor**
 
 ~~~scala
 val hola : String = "Hola"
 ~~~
 ![scala](./image/008.png)
-**Concatenar**
+## Concatenar
 
 ~~~scala
 val saludos : String = hola + " hello"
 ~~~
-**Tipos de datos**
+## Tipos de datos
 ![scala](./image/005.png)
 ~~~scala
 val edad : Int = 35
@@ -102,7 +104,7 @@ val altura : Float = 1.75
 ~~~
 
 ![scala](./image/011.png)
-**Comentarios**
+## Comentarios
 
 Para poner comentarios en `Scala` se usan las barras `//`
 ~~~scala
@@ -123,14 +125,14 @@ val esMayorQue : Boolean = 1 < 2
 ![scala](./image/010.png)
 
 
-**Inferencia de tipos**
+## Inferencia de tipos
 ~~~scala
 val esMenorQue = 1 < 2
 ~~~
 Infiere el tipo de datos por la expresión
 ![scala](./image/012.png)
 
-**Boolean operador &&**
+## Boolean operador &&
 
 ~~~scala
 var casado = true
@@ -151,7 +153,7 @@ var casadoYConHijos = casado && tieneHijos
 
 El operador `&&` es un `and` se tiene que cumplir dos lados con `true` para que se true la variable `casadoYConHijos`
 
-**Auto-Casting**
+## Auto-Casting
 ~~~scala
 var resultado: Int = 20*10
 println(s"El resultado es: ${resultado}")
@@ -166,7 +168,7 @@ println(s"Mi nombre es: ${nombre} ${apellidos}")
 
 ![scala](./image/015.png)
 
-**val o var**
+## val o var
 
 En scala hay dos zonas claramente diferenciadas.
  - Zona mutable
@@ -189,6 +191,77 @@ val nombre : String = "Paco"
 
 `val` es una constante
 `var` permite variar el valor pero su procesamiento es más lento.
+
+
+## Declaración de funciones
+**def nombre_funcion(parametro:tipo): tipo_retorno = {
+    instrucciones
+}**
+
+~~~scala
+def saludar( nombre:String): String = {
+    return s"Hola ${nombre}"
+}
+val miNombre: String = "Patricia"
+
+val saludo = saludar(miNombre)
+println(saludo)
+~~~
+![scala](./image/019.png)
+Se infiere el return, siempre se devuelve la última instrucción. 
+Si la función no quieres que devuelva nada se pone `Unit` o no se pone nada en el tipo de retorno, esto último es más habitual.
+
+~~~scala
+def saludar( nombre:String): String = {
+     s"Hola ${nombre}"
+}
+println(saludo)
+~~~~
+![scala](./image/020.png)
+Y aunque imprima algo puede estar mal como en el siguente caso.
+
+~~~scala
+def saludar( nombre:String):Int = {
+    s"Hola ${nombre}"
+    val test: Int = 0
+    test
+val saludo = saludar(miNombre)
+println(saludo)
+}
+~~~
+![scala](./image/022.png)
+
+Pero hay que tener cuidado porque se guardan lo datos de la última ejecuación.
+
+~~~scala
+def saludar( nombre:String) = {
+    s"Hola ${nombre}"
+    val test: Int = 0
+    test
+println(saludo)
+}
+
+~~~
+![scala](./image/021.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Enlaces 
