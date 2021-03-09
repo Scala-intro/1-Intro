@@ -3,6 +3,7 @@
 1. [Introducción ](#schema1)
 2. [Instalacción](#schema2)
 3. [Variables](#schema3)
+4. [Funciones](#schema4)
 <hr>
 
 <a name="schema1"></a>
@@ -192,8 +193,12 @@ val nombre : String = "Paco"
 `val` es una constante
 `var` permite variar el valor pero su procesamiento es más lento.
 
+<hr>
 
-## Declaración de funciones
+<a name="schema1"></a>
+
+# 4. Declaración de funciones
+
 **def nombre_funcion(parametro:tipo): tipo_retorno = {
     instrucciones
 }**
