@@ -29,6 +29,15 @@ Si tenemos instalada alguna versión perfecto, seguimos al siguente paso, sino:
 sudo apt-get update
 sudo apt-get install default-jdk
 ~~~
+O tenemos que hacer esto
+~~~
+sudo apt install openjdk-8-jdk
+
+sudo update-alternatives --config java
+~~~
+Y configuramos la versión 8
+
+
 2º Instalar Scala
 ~~~
 sudo apt-get install scala
